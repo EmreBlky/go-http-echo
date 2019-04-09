@@ -1,4 +1,4 @@
 FROM alpine:latest
 WORKDIR /app
-COPY ./echo /app/
+COPY ./dist/echo /app/
 ENTRYPOINT ["/app/bin"]
