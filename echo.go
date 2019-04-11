@@ -33,7 +33,7 @@ func EchoHandler(writer http.ResponseWriter, request *http.Request) {
 
 func main() {
 
-    log.Println("starting server, listening on port " + getServerPort())
+    log.Println("test starting server, listening on port " + getServerPort())
 
     http.HandleFunc("/", EchoHandler)
     http.ListenAndServe(":" + getServerPort(), nil)
